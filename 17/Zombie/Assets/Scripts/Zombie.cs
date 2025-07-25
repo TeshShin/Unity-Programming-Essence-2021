@@ -36,7 +36,7 @@ public class Zombie : LivingEntity {
             return false;
         }
     }
-
+        
     private void Awake() {
         // 게임 오브젝트로부터 사용할 컴포넌트들을 가져오기
         navMeshAgent = GetComponent<NavMeshAgent>();
@@ -58,7 +58,7 @@ public class Zombie : LivingEntity {
         // 내비메시 에이전트의 이동 속도 설정
         navMeshAgent.speed = zombieData.speed;
         // 렌더러가 사용중인 머테리얼의 컬러를 변경, 외형 색이 변함
-        zombieRenderer.material.color = zombieData.skinColor;
+        zombieRenderer.material.color = zombieData.skinColor;   
     }
 
     private void Start() {
